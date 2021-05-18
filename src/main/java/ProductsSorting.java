@@ -21,7 +21,7 @@ public class ProductsSorting {
 
         sortByValid(prekes);
         sortByQty(prekes);
-        sortByName(prekes);
+//        sortByName(prekes);
 
     }
 
@@ -56,11 +56,21 @@ public class ProductsSorting {
             System.out.println(prekes[i].name + "--> "+ prekes[i].qty);
     }
 
-    public static void sortByName(Product[] prekes) {
-        for (int i = prekes.length-1; i > 0; i--) {
-        }
-
-    }
+//    public static void sortByName(Product[] prekes) {
+//        Product temp;
+//        for(int i = 0; i<prekes.length-1; i++) {
+//            for (int j = i+1; j<prekes.length-i; j++) {
+//                if(prekes[i].name.compareTo(prekes[j].name)>0) {
+//                     temp = prekes[i];
+//                    prekes[i] = prekes[j];
+//                    prekes[j] = temp;
+//                }
+//            }
+//        }
+//        for (int i = 0; i < prekes.length; i++) {
+//            System.out.println(prekes[i].name);
+//        }
+//    }
 
 }
 class Product {
