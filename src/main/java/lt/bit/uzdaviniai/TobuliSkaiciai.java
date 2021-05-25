@@ -1,3 +1,5 @@
+package lt.bit.uzdaviniai;
+
 public class TobuliSkaiciai {
 
     //Duotas sveikas teigiamas skaicius.

@@ -1,4 +1,6 @@
-public class Tevai  extends Zmogus{
+package lt.bit.mokykla;
+
+public class Tevai  extends Zmogus {
     Zmogus t1;
     Zmogus t2;
 

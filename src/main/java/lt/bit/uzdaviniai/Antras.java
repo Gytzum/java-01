@@ -1,4 +1,4 @@
-/*
+package lt.bit.uzdaviniai;/*
     Parašykite programą, kuri mokėtų suapvalinti double tipo skaičius pagal
     nurodytą tikslumą. Panaudokite matematinę funkciją Math.floor(…)
         Math.floor(2.345) = 2.0

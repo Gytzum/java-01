@@ -1,3 +1,5 @@
+package lt.bit.mokykla;
+
 class Mokytojas extends Zmogus {
     String dalykas;
 

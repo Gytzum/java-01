@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package lt.bit.uzdaviniai;
 
 public class Pirmas {
     public static void main(String[] args) {
