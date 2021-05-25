@@ -37,10 +37,11 @@ public class Zmogus extends Object {
         if (!(o instanceof Zmogus)) return false;
         Zmogus z = (Zmogus) o;
         return this.name != null && z.name != null &&
-               this.name.trim().replaceAll("\\s", "").equalsIgnoreCase(z.name.trim().replaceAll("\\s", "")) &
+               this.name.trim().replaceAll("\\s", "").equalsIgnoreCase(z.name.trim().replaceAll("\\s", "")) &&
                this.email != null && z.email != null &&
                this.email.trim().replaceAll("\\s", "").equalsIgnoreCase(z.email.trim().replaceAll("\\s", ""));
     }
 
 }
-//    replaceAll("\\s", "");
+//        !(this.name == null ? "" : this.name).equals(z.name == null ? "" : z.name)
+//        this.email == null || this.email.isEmpty() && z.email == null||z.email.isEmpty()

@@ -8,13 +8,13 @@ import java.util.stream.IntStream;
 public class CodeWars {
 
     public static void main(String[] args) {
-        String a = null;
-        String b = "";
+        int n = 2;
+        int m = 3;
+        int a = (int) Math.pow(n,3);
 
+        System.out.println(a);
+    }
 
-            boolean c = a!= null || b.length() == 0;
-        System.out.println(c);
-        }
     }
 
 
