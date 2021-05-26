@@ -1,5 +1,7 @@
 package lt.bit.p0524;
 
+import java.util.Objects;
+
 public class Zmogus extends Object {
 
     private String name;
@@ -36,10 +38,19 @@ public class Zmogus extends Object {
         // if (o == null) return false;
         if (!(o instanceof Zmogus)) return false;
         Zmogus z = (Zmogus) o;
-        return this.name != null && z.name != null &&
-               this.name.trim().replaceAll("\\s", "").equalsIgnoreCase(z.name.trim().replaceAll("\\s", "")) &&
-               this.email != null && z.email != null &&
-               this.email.trim().replaceAll("\\s", "").equalsIgnoreCase(z.email.trim().replaceAll("\\s", ""));
+
+        return
+        Objects.equals(
+              this.name == null ? "" : this.name.trim().replaceAll("\\s+", " ").toLowerCase(),
+                z.name == null ?  "" :z.name.trim().replaceAll("\\s+", " ").toLowerCase()) &&
+        Objects.equals(
+                this.email == null ? "" :this.email.trim().toLowerCase(),
+                z.email == null ? "" : z.email.trim().toLowerCase());
+
+//        return this.name != null && z.name != null &&
+//               this.name.trim().replaceAll("\\s+", "").equalsIgnoreCase(z.name.trim().replaceAll("\\s", "")) &&
+//               this.email != null && z.email != null &&
+//               this.email.trim().replaceAll("\\s+", "").equalsIgnoreCase(z.email.trim().replaceAll("\\s", ""));
     }
 
 }

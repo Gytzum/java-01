@@ -24,13 +24,16 @@ public class ZmogusTest {
 
     @Test
     void testEqualsAdvNull() {
+        assertEquals(new Zmogus("ABC", null), new Zmogus("abc", null));
+        assertEquals(new Zmogus("ABC", null), new Zmogus("abc", ""));
+        assertEquals(new Zmogus("ABC", ""), new Zmogus("abc", null));
+
+
         assertEquals(new Zmogus(null, "aaa"), new Zmogus(null, "AAA"));
         assertEquals(new Zmogus(null, "aaa"), new Zmogus("", "AAA"));
         assertEquals(new Zmogus("", "aaa"), new Zmogus(null, "AAA"));
 
-        assertEquals(new Zmogus("ABC", null), new Zmogus("abc", null));
-        assertEquals(new Zmogus("ABC", null), new Zmogus("abc", ""));
-        assertEquals(new Zmogus("ABC", ""), new Zmogus("abc", null));
+
     }
 
     @Test
