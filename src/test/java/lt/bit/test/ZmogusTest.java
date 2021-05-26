@@ -3,6 +3,8 @@ package lt.bit.test;
 import lt.bit.p0524.Zmogus;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -49,5 +51,15 @@ public class ZmogusTest {
         assertNotEquals(new Zmogus("A1", "a1"), new Zmogus("", "a2"));
         assertNotEquals(new Zmogus("A1", "a1"), new Zmogus("A2", null));
         assertNotEquals(new Zmogus("A1", "a1"), new Zmogus("A2", ""));
+    }
+
+    @Test
+    void testZogusAge() {
+        Zmogus z = new Zmogus("A", "a", LocalDate.of(2000, 1, 15));
+
+        assertEquals(9, z.age(LocalDate.of(2010, 1, 14)));
+        assertEquals(10, z.age(LocalDate.of(2010, 1, 15)));
+        assertEquals(0, z.age(LocalDate.of(1999, 1, 15)));
+        assertEquals(3000, z.age(LocalDate.of(5000, 1, 15)));
     }
 }
