@@ -69,11 +69,13 @@ public class Zmogus extends Object {
     }
 
     public int age(LocalDate date) {
-        LocalDate birthday = this.birthday;
-        LocalDate currentDate = date;
-        int age = Period.between(birthday, currentDate).getYears();
-          if(age < 0) return 0 ;
-          return age;
+//        LocalDate birthday = this.birthday;
+//        LocalDate currentDate = date;
+//        int age = Period.between(birthday, currentDate).getYears();
+//          if(age < 0) return 0 ;
+//          return age;
+        int age = Period.between(birthday, date).getYears();
+        return age < 0 ? 0: age;
 
     }
 }

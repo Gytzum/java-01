@@ -34,8 +34,6 @@ public class ZmogusTest {
         assertEquals(new Zmogus(null, "aaa"), new Zmogus(null, "AAA"));
         assertEquals(new Zmogus(null, "aaa"), new Zmogus("", "AAA"));
         assertEquals(new Zmogus("", "aaa"), new Zmogus(null, "AAA"));
-
-
     }
 
     @Test
