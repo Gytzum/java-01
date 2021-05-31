@@ -19,7 +19,7 @@ public class Pora implements Vardas {
     public String vardas() {
         return number  + " poros laimetoja/as";
     }
-
+    @Override
     public String game() {
         return number + ") " + g1.vardas() + " - " + g2.vardas();
     }

@@ -23,4 +23,6 @@ public class Mokinys implements Vardas {
     public String vardas() {
         return this.firstName + " " + this.lastName;
     }
+
+
 }
