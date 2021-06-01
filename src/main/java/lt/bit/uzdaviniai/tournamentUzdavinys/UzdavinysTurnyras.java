@@ -10,7 +10,7 @@ public class UzdavinysTurnyras {
 
         while(games.length >= 2) {
             games = ratas(games);
-            spausdinti(0, games);
+            spausdinti(ratoNr, games);
             ratoNr++;
         }
     }
